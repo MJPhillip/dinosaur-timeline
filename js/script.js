@@ -6,11 +6,11 @@ const cretaceous = document.querySelector(".cretaceous");
 let myLeft = 0;
 
 window.onkeydown = function(event){
-    if(event.keyCode === 39){
+    if(event.code === "ArrowRight"){
         myLeft += 5;
         myCar.style.left = myLeft + "px";
     }
-    if(event.keyCode === 37){
+    if(event.code === "ArrowLeft"){
         myLeft -= 5;
         myCar.style.left = myLeft + "px";
     }
